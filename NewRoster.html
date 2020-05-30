@@ -1,0 +1,1073 @@
+
+  
+    
+  
+  
+    
+<html xmlns:bs="http://www.battlescribe.net/schema/rosterSchema">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html">
+    <style>
+					
+					@import url("https://fonts.googleapis.com/css?family=Oswald:600|EB+Garamond:400,400i,700");
+body {
+	-webkit-print-color-adjust: exact !important;
+  font-family: "EB Garamond", serif; }
+
+th {
+  background-color: #E1501E;
+  padding: 1pt;
+  font-family: "Oswald", sans-serif; }
+
+h1 {
+  text-align: center;
+  font-size: 42pt;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+  margin: 0; }
+
+h2 {
+  font-size: 24pt;
+  font-family: "Oswald", sans-serif;
+  margin: 0;
+  padding-left: 0.1cm; }
+
+#resources {
+  margin-bottom: 0.5cm; }
+
+table.campaign {
+  width: 100%; }
+  table.campaign th, table.campaign td {
+    width: 20%; }
+  table.campaign tr > th:first-child {
+    text-align: left;
+    padding-left: 0.2cm; }
+  table.campaign tr > td:last-child {
+    width: 10%;
+    text-align: center; }
+  table.campaign td {
+    border: 1px solid #666666;
+    padding-left: 5px; }
+  table.campaign table.resource {
+    width: 100%; }
+    table.campaign table.resource td {
+      border: none;
+      padding-left: 0px; }
+    table.campaign table.resource td:last-child {
+      text-align: right;
+      width: 50%;
+      padding-right: 0.5cm; }
+
+#roster-header > table {
+  width: 100%;
+  margin-bottom: 0.5cm; }
+  #roster-header > table th, #roster-header > table td {
+    width: 25%; }
+  #roster-header > table th {
+    text-transform: uppercase; }
+  #roster-header > table td {
+    border: 1px solid #666666;
+    font-weight: 600;
+    font-size: 14pt;
+    text-align: center; }
+
+table.roster {
+  width: 100%;
+  background-color: #FFFFFF; }
+  table.roster th {
+    width: 14.28571%;
+    font-size: 12pt;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase; }
+  table.roster td {
+    background-color: #dfdfdf;
+    text-align: center;
+    font-size: 10pt; }
+    table.roster td > div {
+      font-size: 6pt;
+      font-style: italic; }
+
+.card {
+  width: 11.3cm;
+  height: 7.3cm;
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  padding: 0.2cm;
+  font-size: 10pt;
+  border: 1px solid #bbbbbb;
+  display: table; }
+  .card .header {
+    display: table; }
+    .card .header > div {
+      display: table-cell;
+      width: 3.76667cm; }
+      .card .header > div:nth-child(2) {
+        text-align: center; }
+      .card .header > div:nth-child(3) {
+        text-align: right;
+        font-weight: bold; }
+  .card table {
+    width: 100%;
+    font-size: 8pt;
+    text-align: center;
+    text-transform: uppercase; }
+  .card th {
+    border-top: 1px solid #222E33;
+    border-bottom: 1px solid #222E33; }
+    .card th:first-child {
+      text-align: left;
+      min-width: 2cm;
+      padding-left: 0.1cm; }
+  .card td {
+    background-color: #dfdfdf;
+    border-left: 1px solid #FFFFFF;
+    border-right: 1px solid #FFFFFF;
+    border-bottom: 2px solid #FFFFFF;
+    text-transform: none; }
+    .card td:first-child {
+      text-align: left;
+      min-width: 2cm;
+      width: 2cm;
+      padding-left: 0.1cm;
+      border-left: none; }
+    .card td:last-child {
+      border-right: none; }
+    .card td.sub-header {
+      background-color: transparent;
+      font-weight: bold;
+      font-family: "Oswald", sans-serif; }
+    .card td.sub-body {
+      background-color: transparent;
+      font-weight: bold;
+      text-align: left;
+      padding-left: 0.1cm; }
+
+.unit th, .unit td {
+  font-weight: bold; }
+  .unit th:not(:first-child), .unit td:not(:first-child) {
+    width: 0.91cm; }
+
+.unit td {
+  font-size: 10pt; }
+
+.weapons th:not(:first-child):not(:last-child), .weapons td:not(:first-child):not(:last-child) {
+  width: 1.22cm; }
+
+.weapons th:last-child, .weapons td:last-child {
+  min-width: 3cm; }
+
+.weapons td {
+  border-bottom: 2px solid #FFFFFF; }
+
+.specialism > div, .psyker > div, .abilities > div {
+  float: left; }
+
+.specialism tr:first-child > td, .psyker tr:first-child > td, .abilities tr:first-child > td {
+  background-color: #FFFFFF;
+  font-family: "Oswald", sans-serif;
+  font-size: 10pt; }
+
+.specialism tr:first-child > td:last-child, .psyker tr:first-child > td:last-child, .abilities tr:first-child > td:last-child {
+  text-align: left; }
+
+.card-footer {
+  display: table-footer-group; }
+
+.exp {
+  font-size: 0.8em;
+  display: table;
+  width: 11.3cm; }
+  .exp > div {
+    display: table-cell; }
+    .exp > div > span:nth-child(3), .exp > div span:nth-child(7), .exp > div span:nth-child(12) {
+      color: #E1501E; }
+
+@media screen {
+  #cards {
+    display: flex;
+    flex-wrap: wrap; }
+    #cards .card {
+      margin: 0.2cm; } }
+
+@media print {
+  #roster {
+    page-break-after: always; }
+  .card {
+    page-break-inside: avoid; } }
+
+					
+			
+    </style>
+  </head>
+  <body>
+    <section id="cards">
+      <div class="card">
+        <div class="header">
+          <div></div>
+          <div></div>
+          <div>0
+	                 Points
+	            
+          </div>
+        </div>
+        <div>
+          <table class="unit" cellspacing="0">
+            <tr>
+              <th>
+							Name
+						
+              </th>
+              
+                
+              <th>Movement</th>
+                
+              <th>Initiative</th>
+                
+              <th>Health</th>
+                
+              <th>Armor</th>
+              
+            
+            </tr>
+            <tr>
+              <td>Chronomancer (Alpha/Psychic)</td>
+              
+                
+              <td>7</td>
+                
+              <td>6</td>
+                
+              <td>10</td>
+                
+              <td>3</td>
+              
+            
+            </tr>
+          </table>
+        </div>
+        <div>
+          <table class="weapons" cellspacing="0">
+            <tr>
+              <th>Weapon</th>
+                  
+                    
+              <th>Range</th>
+                    
+              <th>Attack Roll Per Target</th>
+                    
+              <th>Damage Bonus</th>
+                    
+              <th>Special Rules</th>
+                  
+                
+            </tr>
+            <tr>
+              <td>Bolt Rifle</td>
+                  
+                    
+              <td>24</td>
+                    
+              <td>1</td>
+                    
+              <td>+3</td>
+                    
+              <td>-</td>
+                  
+                
+            </tr>
+            <tr>
+              <td>Subcompact Bolt Gun</td>
+                  
+                    
+              <td>18</td>
+                    
+              <td>2</td>
+                    
+              <td>+2</td>
+                    
+              <td>+1 initiative in CC; Unwieldy; Compact</td>
+                  
+                
+            </tr>
+          </table>
+        </div>
+        <div>
+          <table class="weapons" cellspacing="0">
+            <tr>
+              <th>Grenade</th>
+                  
+                    
+              <th>Range</th>
+                    
+              <th>Attack Roll Per Target</th>
+                    
+              <th>Damage Bonus</th>
+                    
+              <th>Special Rules</th>
+                  
+                
+            </tr>
+            <tr>
+              <td>Frag Grenade</td>
+                  
+                    
+              <td>12</td>
+                    
+              <td>2</td>
+                    
+              <td>+6</td>
+                    
+              <td>Grenade, AOE, but target does not add positive initiative modifiers to their dodge roll for cover</td>
+                  
+                
+            </tr>
+            <tr>
+              <td>Nerve Gas Grenade</td>
+                  
+                    
+              <td>12</td>
+                    
+              <td>2</td>
+                    
+              <td>na</td>
+                    
+              <td>Grenade, AOE, but target does not add positive initiative modifiers to their dodge roll of any kind; if this weapon hits, for each hit, disre-gard total damage and target’s armor and immediately subtract 4 health from the target; Also for each hit, the target loses -1 move-ment value for the remainder of the game, down to a minimum value of 1.</td>
+                  
+                
+            </tr>
+          </table>
+        </div>
+        <div>
+          <table class="weapons" cellspacing="0">
+            <tr>
+              <td>Stolen Legionary Armor</td>
+                  
+                    
+              <td>Grants +1 armor value to the soldier for the entirety of the battle.</td>
+                  
+                
+            </tr>
+          </table>
+        </div>
+        <div class="abilities">
+          <table cellspacing="0">
+            <tr>
+              <td>Psychic Abilities:</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Psychic Ability</td>
+              
+                
+              <td>All abilities from the School of Time</td>
+              
+            
+            </tr>
+          </table>
+        </div>
+        <div class="abilities">
+          <table cellspacing="0">
+            <tr>
+              <td>Abilities:</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Deadeye 1</td>
+                  
+                    
+              <td>When a soldier with Deadeye 1 executes any ranged at-tack, they gain an additional +1 initiative modifier to their attack roll(s).</td>
+                  
+                
+            </tr>
+            <tr>
+              <td>Psychic Prowess 1</td>
+                  
+                    
+              <td>When a soldier with Psychic Prowess attempts to cast a psychic ability, they add +1 initiative modifier to their total power level roll.</td>
+                  
+                
+            </tr>
+          </table>
+        </div>
+        <div class="specialism">
+          <table cellspacing="0">
+            <tr>
+              <td>Unit Type:	</td>
+              <td>Alpha</td>
+            </tr>
+            <tr></tr>
+          </table>
+        </div>
+        <div class="card-footer">
+          <div class="exp">
+            <div>Wounds: </div>1
+            <span>☐</span>2
+            <span>☐</span>3
+            <span>☐</span>4
+            <span>☐</span>5
+            <span>☐</span>6
+            <span>☐</span>7
+            <span>☐</span>8
+            <span>☐</span>9
+            <span>☐</span>10
+            <span>☐</span>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="header">
+          <div></div>
+          <div></div>
+          <div>15
+	                 Points
+	            
+          </div>
+        </div>
+        <div>
+          <table class="unit" cellspacing="0">
+            <tr>
+              <th>
+							Name
+						
+              </th>
+              
+                
+              <th>Movement</th>
+                
+              <th>Initiative</th>
+                
+              <th>Health</th>
+                
+              <th>Armor</th>
+              
+            
+            </tr>
+            <tr>
+              <td>Looper</td>
+              
+                
+              <td>6*</td>
+                
+              <td>5*</td>
+                
+              <td>8</td>
+                
+              <td>3</td>
+              
+            
+            </tr>
+          </table>
+        </div>
+        <div>
+          <table class="weapons" cellspacing="0">
+            <tr>
+              <th>Weapon</th>
+                  
+                    
+              <th>Range</th>
+                    
+              <th>Attack Roll Per Target</th>
+                    
+              <th>Damage Bonus</th>
+                    
+              <th>Special Rules</th>
+                  
+                
+            </tr>
+            <tr>
+              <td>Blunderbuss</td>
+                  
+                    
+              <td>18</td>
+                    
+              <td>2</td>
+                    
+              <td>+4</td>
+                    
+              <td>+2 initiative in CC; Compact; Unwieldy</td>
+                  
+                
+            </tr>
+            <tr>
+              <td>Bolt Magnum</td>
+                  
+                    
+              <td>12</td>
+                    
+              <td>1</td>
+                    
+              <td>+3</td>
+                    
+              <td>+1 initiative in CC; Cannot be used to execute Cover Fire</td>
+                  
+                
+            </tr>
+          </table>
+        </div>
+        <div>
+          <table class="weapons" cellspacing="0">
+            <tr></tr>
+          </table>
+        </div>
+        <div>
+          <table class="weapons" cellspacing="0">
+            <tr>
+              <td>Jetpack</td>
+                  
+                    
+              <td>Grants +1 movement value to the soldier and the soldier ignores all terrain rules while the model moves.</td>
+                  
+                
+            </tr>
+          </table>
+        </div>
+        <div class="specialism">
+          <table cellspacing="0">
+            <tr>
+              <td>Unit Type:	</td>
+              <td>Soldier</td>
+            </tr>
+            <tr></tr>
+          </table>
+        </div>
+        <div class="card-footer">
+          <div class="exp">
+            <div>Wounds: </div>1
+            <span>☐</span>2
+            <span>☐</span>3
+            <span>☐</span>4
+            <span>☐</span>5
+            <span>☐</span>6
+            <span>☐</span>7
+            <span>☐</span>8
+            <span>☐</span>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="header">
+          <div></div>
+          <div></div>
+          <div>15
+	                 Points
+	            
+          </div>
+        </div>
+        <div>
+          <table class="unit" cellspacing="0">
+            <tr>
+              <th>
+							Name
+						
+              </th>
+              
+                
+              <th>Movement</th>
+                
+              <th>Initiative</th>
+                
+              <th>Health</th>
+                
+              <th>Armor</th>
+              
+            
+            </tr>
+            <tr>
+              <td>Looper</td>
+              
+                
+              <td>6*</td>
+                
+              <td>5*</td>
+                
+              <td>8</td>
+                
+              <td>3</td>
+              
+            
+            </tr>
+          </table>
+        </div>
+        <div>
+          <table class="weapons" cellspacing="0">
+            <tr>
+              <th>Weapon</th>
+                  
+                    
+              <th>Range</th>
+                    
+              <th>Attack Roll Per Target</th>
+                    
+              <th>Damage Bonus</th>
+                    
+              <th>Special Rules</th>
+                  
+                
+            </tr>
+            <tr>
+              <td>Blunderbuss</td>
+                  
+                    
+              <td>18</td>
+                    
+              <td>2</td>
+                    
+              <td>+4</td>
+                    
+              <td>+2 initiative in CC; Compact; Unwieldy</td>
+                  
+                
+            </tr>
+            <tr>
+              <td>Bolt Magnum</td>
+                  
+                    
+              <td>12</td>
+                    
+              <td>1</td>
+                    
+              <td>+3</td>
+                    
+              <td>+1 initiative in CC; Cannot be used to execute Cover Fire</td>
+                  
+                
+            </tr>
+          </table>
+        </div>
+        <div>
+          <table class="weapons" cellspacing="0">
+            <tr></tr>
+          </table>
+        </div>
+        <div>
+          <table class="weapons" cellspacing="0">
+            <tr>
+              <td>Jetpack</td>
+                  
+                    
+              <td>Grants +1 movement value to the soldier and the soldier ignores all terrain rules while the model moves.</td>
+                  
+                
+            </tr>
+          </table>
+        </div>
+        <div class="specialism">
+          <table cellspacing="0">
+            <tr>
+              <td>Unit Type:	</td>
+              <td>Soldier</td>
+            </tr>
+            <tr></tr>
+          </table>
+        </div>
+        <div class="card-footer">
+          <div class="exp">
+            <div>Wounds: </div>1
+            <span>☐</span>2
+            <span>☐</span>3
+            <span>☐</span>4
+            <span>☐</span>5
+            <span>☐</span>6
+            <span>☐</span>7
+            <span>☐</span>8
+            <span>☐</span>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="header">
+          <div></div>
+          <div></div>
+          <div>16
+	                 Points
+	            
+          </div>
+        </div>
+        <div>
+          <table class="unit" cellspacing="0">
+            <tr>
+              <th>
+							Name
+						
+              </th>
+              
+                
+              <th>Movement</th>
+                
+              <th>Initiative</th>
+                
+              <th>Health</th>
+                
+              <th>Armor</th>
+              
+            
+            </tr>
+            <tr>
+              <td>Clairvoyant (Unique/Psychic)</td>
+              
+                
+              <td>7*</td>
+                
+              <td>6*</td>
+                
+              <td>10</td>
+                
+              <td>2</td>
+              
+            
+            </tr>
+          </table>
+        </div>
+        <div>
+          <table class="weapons" cellspacing="0">
+            <tr>
+              <th>Weapon</th>
+                  
+                    
+              <th>Range</th>
+                    
+              <th>Attack Roll Per Target</th>
+                    
+              <th>Damage Bonus</th>
+                    
+              <th>Special Rules</th>
+                  
+                
+            </tr>
+            <tr>
+              <td>Subcompact Bolt Gun</td>
+                  
+                    
+              <td>18</td>
+                    
+              <td>2</td>
+                    
+              <td>+2</td>
+                    
+              <td>+1 initiative in CC; Unwieldy; Compact</td>
+                  
+                
+            </tr>
+            <tr>
+              <td>Bolt Rifle</td>
+                  
+                    
+              <td>24</td>
+                    
+              <td>1</td>
+                    
+              <td>+3</td>
+                    
+              <td>-</td>
+                  
+                
+            </tr>
+          </table>
+        </div>
+        <div>
+          <table class="weapons" cellspacing="0">
+            <tr></tr>
+          </table>
+        </div>
+        <div>
+          <table class="weapons" cellspacing="0"></table>
+        </div>
+        <div class="abilities">
+          <table cellspacing="0">
+            <tr>
+              <td>Psychic Abilities:</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Psychic ABility 3</td>
+              
+                
+              <td>Any Plasmid ability at the cost of 1uc per ability</td>
+              
+            
+            </tr>
+          </table>
+        </div>
+        <div class="specialism">
+          <table cellspacing="0">
+            <tr>
+              <td>Unit Type:	</td>
+              <td>Specialist</td>
+            </tr>
+            <tr></tr>
+          </table>
+        </div>
+        <div class="card-footer">
+          <div class="exp">
+            <div>Wounds: </div>1
+            <span>☐</span>2
+            <span>☐</span>3
+            <span>☐</span>4
+            <span>☐</span>5
+            <span>☐</span>6
+            <span>☐</span>7
+            <span>☐</span>8
+            <span>☐</span>9
+            <span>☐</span>10
+            <span>☐</span>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="header">
+          <div></div>
+          <div></div>
+          <div>12
+	                 Points
+	            
+          </div>
+        </div>
+        <div>
+          <table class="unit" cellspacing="0">
+            <tr>
+              <th>
+							Name
+						
+              </th>
+              
+                
+              <th>Movement</th>
+                
+              <th>Initiative</th>
+                
+              <th>Health</th>
+                
+              <th>Armor</th>
+              
+            
+            </tr>
+            <tr>
+              <td>Seamstress (Unique/Psychic)</td>
+              
+                
+              <td>7*</td>
+                
+              <td>5*</td>
+                
+              <td>8</td>
+                
+              <td>2</td>
+              
+            
+            </tr>
+          </table>
+        </div>
+        <div>
+          <table class="weapons" cellspacing="0">
+            <tr>
+              <th>Weapon</th>
+                  
+                    
+              <th>Range</th>
+                    
+              <th>Attack Roll Per Target</th>
+                    
+              <th>Damage Bonus</th>
+                    
+              <th>Special Rules</th>
+                  
+                
+            </tr>
+            <tr>
+              <td>Bolt Rifle (Scoped)</td>
+                  
+                    
+              <td>36</td>
+                    
+              <td>1</td>
+                    
+              <td>+3</td>
+                    
+              <td>If used to execute an Advance Order, read all stats like a normal Bolt Rifle and apply -1 initiative modifier to attack roll as normal</td>
+                  
+                
+            </tr>
+          </table>
+        </div>
+        <div>
+          <table class="weapons" cellspacing="0">
+            <tr></tr>
+          </table>
+        </div>
+        <div>
+          <table class="weapons" cellspacing="0"></table>
+        </div>
+        <div class="abilities">
+          <table cellspacing="0">
+            <tr>
+              <td>Psychic Abilities:</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Psychic Ability 2</td>
+              
+                
+              <td>Abilities 1 and 2 of School of Order</td>
+              
+            
+            </tr>
+          </table>
+        </div>
+        <div class="specialism">
+          <table cellspacing="0">
+            <tr>
+              <td>Unit Type:	</td>
+              <td>Specialist</td>
+            </tr>
+            <tr></tr>
+          </table>
+        </div>
+        <div class="card-footer">
+          <div class="exp">
+            <div>Wounds: </div>1
+            <span>☐</span>2
+            <span>☐</span>3
+            <span>☐</span>4
+            <span>☐</span>5
+            <span>☐</span>6
+            <span>☐</span>7
+            <span>☐</span>8
+            <span>☐</span>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="header">
+          <div></div>
+          <div></div>
+          <div>12
+	                 Points
+	            
+          </div>
+        </div>
+        <div>
+          <table class="unit" cellspacing="0">
+            <tr>
+              <th>
+							Name
+						
+              </th>
+              
+                
+              <th>Movement</th>
+                
+              <th>Initiative</th>
+                
+              <th>Health</th>
+                
+              <th>Armor</th>
+              
+            
+            </tr>
+            <tr>
+              <td>Henchman</td>
+              
+                
+              <td>6*</td>
+                
+              <td>3*</td>
+                
+              <td>8</td>
+                
+              <td>2</td>
+              
+            
+            </tr>
+          </table>
+        </div>
+        <div>
+          <table class="weapons" cellspacing="0">
+            <tr>
+              <th>Weapon</th>
+                  
+                    
+              <th>Range</th>
+                    
+              <th>Attack Roll Per Target</th>
+                    
+              <th>Damage Bonus</th>
+                    
+              <th>Special Rules</th>
+                  
+                
+            </tr>
+            <tr>
+              <td>Bolt Magnum</td>
+                  
+                    
+              <td>12</td>
+                    
+              <td>1</td>
+                    
+              <td>+3</td>
+                    
+              <td>+1 initiative in CC; Cannot be used to execute Cover Fire</td>
+                  
+                
+            </tr>
+            <tr>
+              <td>Bolt Rifle</td>
+                  
+                    
+              <td>24</td>
+                    
+              <td>1</td>
+                    
+              <td>+3</td>
+                    
+              <td>-</td>
+                  
+                
+            </tr>
+          </table>
+        </div>
+        <div>
+          <table class="weapons" cellspacing="0">
+            <tr></tr>
+          </table>
+        </div>
+        <div>
+          <table class="weapons" cellspacing="0">
+            <tr>
+              <td>Stolen Legionary Armor</td>
+                  
+                    
+              <td>Grants +1 armor value to the soldier for the entirety of the battle.</td>
+                  
+                
+            </tr>
+          </table>
+        </div>
+        <div class="specialism">
+          <table cellspacing="0">
+            <tr>
+              <td>Unit Type:	</td>
+              <td>Soldier</td>
+            </tr>
+            <tr></tr>
+          </table>
+        </div>
+        <div class="card-footer">
+          <div class="exp">
+            <div>Wounds: </div>1
+            <span>☐</span>2
+            <span>☐</span>3
+            <span>☐</span>4
+            <span>☐</span>5
+            <span>☐</span>6
+            <span>☐</span>7
+            <span>☐</span>8
+            <span>☐</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
+  

@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<roster id="5131-5f77-cb7f-ae7c" name="New Roster" battleScribeVersion="2.03" gameSystemId="d284-e42e-1c51-a4fb" gameSystemName="StarBreach" gameSystemRevision="4" xmlns="http://www.battlescribe.net/schema/rosterSchema">
+  <costs>
+    <cost name="UC" typeId="9e37-50a0-9764-fda5" value="70.0"/>
+  </costs>
+  <forces>
+    <force id="cfbc-aff5-7f1c-e6a8" name="Soldiers" entryId="2313-d657-4223-35b2" catalogueId="64d3-7c09-cc2e-50af" catalogueRevision="5" catalogueName="Continuum Syndicate">
+      <rules>
+        <rule id="a3d3-0324-a556-0826" name="Synthetic Wrinkle in Time" publicationId="9ed2-b94e-33e0-364e" page="95" hidden="false">
+          <description>All Continuum Syndicate soldiers and specialists sustain their base movement and initiative values as long as the warband’s alpha is alive. If the warband’s alpha is eliminated, however, then all soldiers and specialists immediately lose -2 movement and -2 initia-tive to their base values for the rest of the battle.</description>
+        </rule>
+        <rule id="02bb-be28-6606-c8d5" name="Second Chance" publicationId="9ed2-b94e-33e0-364e" page="95" hidden="false">
+          <description>When a Chronomancer, Looper or Clairvoyant reaches a health value of 0 for the first time, before being eliminated from play, the Continuum Syndicate player rolls a D6. On a roll of 3 or less, the soldier/specialist dies and is eliminated. On a roll of 4+, the soldier is not eliminated, but rather warps back to the present battle from the past. The soldier model is moved up to 12” on the board from their current location and their health value is reset to 4. This soldier must execute a Down Order immediately, without the ability to use an item, and, if they have not already done so, they cannot take a special action this turn.</description>
+        </rule>
+      </rules>
+      <selections>
+        <selection id="7b7c-55f3-2852-f01b" name="Chronomancer (Alpha/Psychic)" entryId="ef1b-6d68-bb4a-36f6::5aac-8a4f-04b7-3731" number="1" type="upgrade">
+          <profiles>
+            <profile id="ef1b-6d68-bb4a-36f6::7831-7781-c860-71f6" name="Chronomancer (Alpha/Psychic)" hidden="false" typeId="27c9-8948-56dc-b664" typeName="Characteristic">
+              <characteristics>
+                <characteristic name="Movement" typeId="df79-088a-9662-4941">7</characteristic>
+                <characteristic name="Initiative" typeId="546c-2d7b-94fa-714b">6</characteristic>
+                <characteristic name="Health" typeId="0860-036f-b5e3-0b5c">10</characteristic>
+                <characteristic name="Armor" typeId="fdb9-7fc6-151b-96f4">3</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="ef1b-6d68-bb4a-36f6::5316-8ade-9350-a8cd::d2b0-a0e9-880c-d29a" name="Psychic Ability" hidden="false" typeId="f7f1-057c-64de-8b10" typeName="Psychic Ability">
+              <characteristics>
+                <characteristic name="School Order" typeId="1205-2b68-f272-49f6">All abilities from the School of Time</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selections>
+            <selection id="6289-77fe-e583-6e84" name="Deadeye 1" entryId="ef1b-6d68-bb4a-36f6::bf96-385f-e928-993b::4e1d-5c8b-4ffb-5de7::f2df-2474-1d3f-d669" entryGroupId="ef1b-6d68-bb4a-36f6::bf96-385f-e928-993b::e26a-9f7e-401d-4e6e" number="1" type="upgrade">
+              <profiles>
+                <profile id="ef1b-6d68-bb4a-36f6::bf96-385f-e928-993b::4e1d-5c8b-4ffb-5de7::6963-28a0-0660-171f::f82a-fde6-229e-2263" name="Deadeye 1" hidden="false" typeId="71cc-52da-8668-e6a7" typeName="Ability">
+                  <characteristics>
+                    <characteristic name="Ability" typeId="2243-ea94-8d78-7049">When a soldier with Deadeye 1 executes any ranged at-tack, they gain an additional +1 initiative modifier to their attack roll(s).</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="UC" typeId="9e37-50a0-9764-fda5" value="0.0"/>
+              </costs>
+            </selection>
+            <selection id="ee28-560b-8a8c-4047" name="Psychic Prowess 1" entryId="ef1b-6d68-bb4a-36f6::bf96-385f-e928-993b::8602-abfe-f82e-d760::549d-9326-16b1-42d6" entryGroupId="ef1b-6d68-bb4a-36f6::bf96-385f-e928-993b::776f-3959-b3ad-1750" number="1" type="upgrade">
+              <profiles>
+                <profile id="ef1b-6d68-bb4a-36f6::bf96-385f-e928-993b::8602-abfe-f82e-d760::8fb2-2762-10ef-06f5::5231-c483-f4f4-7d26" name="Psychic Prowess 1" hidden="false" typeId="71cc-52da-8668-e6a7" typeName="Ability">
+                  <characteristics>
+                    <characteristic name="Ability" typeId="2243-ea94-8d78-7049">When a soldier with Psychic Prowess attempts to cast a psychic ability, they add +1 initiative modifier to their total power level roll.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="UC" typeId="9e37-50a0-9764-fda5" value="0.0"/>
+              </costs>
+            </selection>
+            <selection id="8a6d-bc25-6372-dbe5" name="Frag Grenade" entryId="ef1b-6d68-bb4a-36f6::908f-7479-8369-1b64::8eb0-d367-ce54-09d2::6d0a-2ff6-b04f-fbd3" entryGroupId="ef1b-6d68-bb4a-36f6::908f-7479-8369-1b64::82ae-b652-daf8-47cb" number="1" type="upgrade">
+              <profiles>
+                <profile id="ef1b-6d68-bb4a-36f6::908f-7479-8369-1b64::8eb0-d367-ce54-09d2::bd54-5674-cb44-5bcf" name="Frag Grenade" hidden="false" typeId="b156-a531-d7e5-2ffc" typeName="Grenade">
+                  <characteristics>
+                    <characteristic name="Range" typeId="1d65-f5d5-69f5-5b14">12</characteristic>
+                    <characteristic name="Attack Roll Per Target" typeId="e0f2-cd4f-c267-fe03">2</characteristic>
+                    <characteristic name="Damage Bonus" typeId="4c05-15b8-bd6f-768a">+6</characteristic>
+                    <characteristic name="Special Rules" typeId="507f-99b3-e2ce-65fe">Grenade, AOE, but target does not add positive initiative modifiers to their dodge roll for cover</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="UC" typeId="9e37-50a0-9764-fda5" value="0.0"/>
+              </costs>
+            </selection>
+            <selection id="db1f-cfa1-5526-5425" name="Nerve Gas Grenade" entryId="ef1b-6d68-bb4a-36f6::908f-7479-8369-1b64::6686-e785-3d7e-d789::0e2b-d10b-8a5c-5563" entryGroupId="ef1b-6d68-bb4a-36f6::908f-7479-8369-1b64::82ae-b652-daf8-47cb" number="1" type="upgrade">
+              <profiles>
+                <profile id="ef1b-6d68-bb4a-36f6::908f-7479-8369-1b64::6686-e785-3d7e-d789::5840-1896-edbf-9f7e" name="Nerve Gas Grenade" hidden="false" typeId="b156-a531-d7e5-2ffc" typeName="Grenade">
+                  <characteristics>
+                    <characteristic name="Range" typeId="1d65-f5d5-69f5-5b14">12</characteristic>
+                    <characteristic name="Attack Roll Per Target" typeId="e0f2-cd4f-c267-fe03">2</characteristic>
+                    <characteristic name="Damage Bonus" typeId="4c05-15b8-bd6f-768a">na</characteristic>
+                    <characteristic name="Special Rules" typeId="507f-99b3-e2ce-65fe">Grenade, AOE, but target does not add positive initiative modifiers to their dodge roll of any kind; if this weapon hits, for each hit, disre-gard total damage and target’s armor and immediately subtract 4 health from the target; Also for each hit, the target loses -1 move-ment value for the remainder of the game, down to a minimum value of 1.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="UC" typeId="9e37-50a0-9764-fda5" value="0.0"/>
+              </costs>
+            </selection>
+            <selection id="3151-5cba-e9f8-06f2" name="Stolen Legionary Armor" entryId="ef1b-6d68-bb4a-36f6::b9b1-91c7-3ac1-1766::3e3f-e657-0582-a6db::b566-2cef-dbc9-a6ad" entryGroupId="ef1b-6d68-bb4a-36f6::b9b1-91c7-3ac1-1766::2713-357f-77b5-28d6" number="1" type="upgrade">
+              <profiles>
+                <profile id="ef1b-6d68-bb4a-36f6::b9b1-91c7-3ac1-1766::3e3f-e657-0582-a6db::24ca-1051-26c3-fb2f" name="Stolen Legionary Armor" hidden="false" typeId="7af8-bea8-aaa8-2295" typeName="Relic">
+                  <characteristics>
+                    <characteristic name="Special Rules" typeId="b1d9-301e-599c-d3f6">Grants +1 armor value to the soldier for the entirety of the battle.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="UC" typeId="9e37-50a0-9764-fda5" value="0.0"/>
+              </costs>
+            </selection>
+            <selection id="b1f2-fbd4-70bc-0c8c" name="Bolt Rifle" entryId="ef1b-6d68-bb4a-36f6::a2e5-59cd-4089-5a9d::13dd-814b-2db6-5e87::778b-dbe0-82ff-91e3" entryGroupId="ef1b-6d68-bb4a-36f6::a2e5-59cd-4089-5a9d::7778-e9f0-f902-45ef" number="1" type="upgrade">
+              <profiles>
+                <profile id="ef1b-6d68-bb4a-36f6::a2e5-59cd-4089-5a9d::13dd-814b-2db6-5e87::1944-c00a-752e-a54f" name="Bolt Rifle" hidden="false" typeId="d89f-2134-4e54-a502" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="549e-ea38-4e69-a0d9">24</characteristic>
+                    <characteristic name="Attack Roll Per Target" typeId="453a-bb38-6f29-78f1">1</characteristic>
+                    <characteristic name="Damage Bonus" typeId="eb54-e43c-e3f5-d2ef">+3</characteristic>
+                    <characteristic name="Special Rules" typeId="1d54-d789-0fcb-405d">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="UC" typeId="9e37-50a0-9764-fda5" value="0.0"/>
+              </costs>
+            </selection>
+            <selection id="2ee9-2be2-ba0a-2b34" name="Subcompact Bolt Gun" entryId="ef1b-6d68-bb4a-36f6::a398-f13b-6545-0964::4dd8-a7bc-a6d0-3fb9::9394-0ff4-f0af-d53e" entryGroupId="ef1b-6d68-bb4a-36f6::a398-f13b-6545-0964::3941-9b09-6805-cf57" number="1" type="upgrade">
+              <profiles>
+                <profile id="ef1b-6d68-bb4a-36f6::a398-f13b-6545-0964::4dd8-a7bc-a6d0-3fb9::c6a9-c370-30f7-3fbb" name="Subcompact Bolt Gun" hidden="false" typeId="d89f-2134-4e54-a502" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="549e-ea38-4e69-a0d9">18</characteristic>
+                    <characteristic name="Attack Roll Per Target" typeId="453a-bb38-6f29-78f1">2</characteristic>
+                    <characteristic name="Damage Bonus" typeId="eb54-e43c-e3f5-d2ef">+2</characteristic>
+                    <characteristic name="Special Rules" typeId="1d54-d789-0fcb-405d">+1 initiative in CC; Unwieldy; Compact</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="UC" typeId="9e37-50a0-9764-fda5" value="0.0"/>
+              </costs>
+            </selection>
+          </selections>
+          <costs>
+            <cost name="UC" typeId="9e37-50a0-9764-fda5" value="0.0"/>
+          </costs>
+          <categories>
+            <category id="1805-fc76-7c32-2917" name="Alpha" entryId="65fa-de41-86ca-79a3" primary="true"/>
+            <category id="855f-0cf0-300b-f580" name="Psychic" entryId="65e2-baf1-a3e7-df11" primary="false"/>
+          </categories>
+        </selection>
+        <selection id="a303-0ec1-1c46-1e12" name="Looper" entryId="fe8d-a457-fc45-2f93::fe4d-b230-b804-3a90" number="1" type="upgrade">
+          <profiles>
+            <profile id="fe8d-a457-fc45-2f93::82ce-6230-ccef-25e3" name="Looper" hidden="false" typeId="27c9-8948-56dc-b664" typeName="Characteristic">
+              <characteristics>
+                <characteristic name="Movement" typeId="df79-088a-9662-4941">6*</characteristic>
+                <characteristic name="Initiative" typeId="546c-2d7b-94fa-714b">5*</characteristic>
+                <characteristic name="Health" typeId="0860-036f-b5e3-0b5c">8</characteristic>
+                <characteristic name="Armor" typeId="fdb9-7fc6-151b-96f4">3</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selections>
+            <selection id="7863-37b8-0611-6163" name="Blunderbuss" entryId="fe8d-a457-fc45-2f93::34f9-4dc9-1de4-08df::4eb4-1654-dbd1-ad7c" entryGroupId="fe8d-a457-fc45-2f93::6145-ecd9-d043-47cf" number="1" type="upgrade">
+              <profiles>
+                <profile id="fe8d-a457-fc45-2f93::34f9-4dc9-1de4-08df::bf7c-691a-1ba5-ab71" name="Blunderbuss" hidden="false" typeId="d89f-2134-4e54-a502" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="549e-ea38-4e69-a0d9">18</characteristic>
+                    <characteristic name="Attack Roll Per Target" typeId="453a-bb38-6f29-78f1">2</characteristic>
+                    <characteristic name="Damage Bonus" typeId="eb54-e43c-e3f5-d2ef">+4</characteristic>
+                    <characteristic name="Special Rules" typeId="1d54-d789-0fcb-405d">+2 initiative in CC; Compact; Unwieldy</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="UC" typeId="9e37-50a0-9764-fda5" value="0.0"/>
+              </costs>
+            </selection>
+            <selection id="3950-8e35-90fa-95c3" name="Bolt Magnum" entryId="fe8d-a457-fc45-2f93::f264-391d-aa63-d1c2::31ca-160e-1ba5-56e7" entryGroupId="fe8d-a457-fc45-2f93::9ef1-dab0-8ac6-69d5" number="1" type="upgrade">
+              <profiles>
+                <profile id="fe8d-a457-fc45-2f93::f264-391d-aa63-d1c2::0048-b338-c92c-965c" name="Bolt Magnum" hidden="false" typeId="d89f-2134-4e54-a502" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="549e-ea38-4e69-a0d9">12</characteristic>
+                    <characteristic name="Attack Roll Per Target" typeId="453a-bb38-6f29-78f1">1</characteristic>
+                    <characteristic name="Damage Bonus" typeId="eb54-e43c-e3f5-d2ef">+3</characteristic>
+                    <characteristic name="Special Rules" typeId="1d54-d789-0fcb-405d">+1 initiative in CC; Cannot be used to execute Cover Fire</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="UC" typeId="9e37-50a0-9764-fda5" value="0.0"/>
+              </costs>
+            </selection>
+            <selection id="a898-0aa7-dd6d-5a30" name="Jetpack" entryId="fe8d-a457-fc45-2f93::38f9-55e1-ea94-c8fe::2ae1-e637-2db4-2ab3::1619-fed9-587d-664f" entryGroupId="fe8d-a457-fc45-2f93::38f9-55e1-ea94-c8fe::2713-357f-77b5-28d6" number="1" type="upgrade">
+              <profiles>
+                <profile id="fe8d-a457-fc45-2f93::38f9-55e1-ea94-c8fe::2ae1-e637-2db4-2ab3::d0b0-f573-5e66-be0c" name="Jetpack" hidden="false" typeId="7af8-bea8-aaa8-2295" typeName="Relic">
+                  <characteristics>
+                    <characteristic name="Special Rules" typeId="b1d9-301e-599c-d3f6">Grants +1 movement value to the soldier and the soldier ignores all terrain rules while the model moves.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="UC" typeId="9e37-50a0-9764-fda5" value="0.0"/>
+              </costs>
+            </selection>
+          </selections>
+          <costs>
+            <cost name="UC" typeId="9e37-50a0-9764-fda5" value="15.0"/>
+          </costs>
+          <categories>
+            <category id="6986-2fee-a405-27e7" name="Soldier" entryId="3c47-be9a-ee6e-cdc3" primary="true"/>
+          </categories>
+        </selection>
+        <selection id="8dd2-90a7-970f-4687" name="Looper" entryId="fe8d-a457-fc45-2f93::fe4d-b230-b804-3a90" number="1" type="upgrade">
+          <profiles>
+            <profile id="fe8d-a457-fc45-2f93::82ce-6230-ccef-25e3" name="Looper" hidden="false" typeId="27c9-8948-56dc-b664" typeName="Characteristic">
+              <characteristics>
+                <characteristic name="Movement" typeId="df79-088a-9662-4941">6*</characteristic>
+                <characteristic name="Initiative" typeId="546c-2d7b-94fa-714b">5*</characteristic>
+                <characteristic name="Health" typeId="0860-036f-b5e3-0b5c">8</characteristic>
+                <characteristic name="Armor" typeId="fdb9-7fc6-151b-96f4">3</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selections>
+            <selection id="349d-7adb-f8ad-f638" name="Blunderbuss" entryId="fe8d-a457-fc45-2f93::34f9-4dc9-1de4-08df::4eb4-1654-dbd1-ad7c" entryGroupId="fe8d-a457-fc45-2f93::6145-ecd9-d043-47cf" number="1" type="upgrade">
+              <profiles>
+                <profile id="fe8d-a457-fc45-2f93::34f9-4dc9-1de4-08df::bf7c-691a-1ba5-ab71" name="Blunderbuss" hidden="false" typeId="d89f-2134-4e54-a502" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="549e-ea38-4e69-a0d9">18</characteristic>
+                    <characteristic name="Attack Roll Per Target" typeId="453a-bb38-6f29-78f1">2</characteristic>
+                    <characteristic name="Damage Bonus" typeId="eb54-e43c-e3f5-d2ef">+4</characteristic>
+                    <characteristic name="Special Rules" typeId="1d54-d789-0fcb-405d">+2 initiative in CC; Compact; Unwieldy</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="UC" typeId="9e37-50a0-9764-fda5" value="0.0"/>
+              </costs>
+            </selection>
+            <selection id="53f0-d185-eaf3-60c6" name="Bolt Magnum" entryId="fe8d-a457-fc45-2f93::f264-391d-aa63-d1c2::31ca-160e-1ba5-56e7" entryGroupId="fe8d-a457-fc45-2f93::9ef1-dab0-8ac6-69d5" number="1" type="upgrade">
+              <profiles>
+                <profile id="fe8d-a457-fc45-2f93::f264-391d-aa63-d1c2::0048-b338-c92c-965c" name="Bolt Magnum" hidden="false" typeId="d89f-2134-4e54-a502" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="549e-ea38-4e69-a0d9">12</characteristic>
+                    <characteristic name="Attack Roll Per Target" typeId="453a-bb38-6f29-78f1">1</characteristic>
+                    <characteristic name="Damage Bonus" typeId="eb54-e43c-e3f5-d2ef">+3</characteristic>
+                    <characteristic name="Special Rules" typeId="1d54-d789-0fcb-405d">+1 initiative in CC; Cannot be used to execute Cover Fire</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="UC" typeId="9e37-50a0-9764-fda5" value="0.0"/>
+              </costs>
+            </selection>
+            <selection id="ebe0-4432-8dde-ccac" name="Jetpack" entryId="fe8d-a457-fc45-2f93::38f9-55e1-ea94-c8fe::2ae1-e637-2db4-2ab3::1619-fed9-587d-664f" entryGroupId="fe8d-a457-fc45-2f93::38f9-55e1-ea94-c8fe::2713-357f-77b5-28d6" number="1" type="upgrade">
+              <profiles>
+                <profile id="fe8d-a457-fc45-2f93::38f9-55e1-ea94-c8fe::2ae1-e637-2db4-2ab3::d0b0-f573-5e66-be0c" name="Jetpack" hidden="false" typeId="7af8-bea8-aaa8-2295" typeName="Relic">
+                  <characteristics>
+                    <characteristic name="Special Rules" typeId="b1d9-301e-599c-d3f6">Grants +1 movement value to the soldier and the soldier ignores all terrain rules while the model moves.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="UC" typeId="9e37-50a0-9764-fda5" value="0.0"/>
+              </costs>
+            </selection>
+          </selections>
+          <costs>
+            <cost name="UC" typeId="9e37-50a0-9764-fda5" value="15.0"/>
+          </costs>
+          <categories>
+            <category id="0b10-8123-804c-9146" name="Soldier" entryId="3c47-be9a-ee6e-cdc3" primary="true"/>
+          </categories>
+        </selection>
+        <selection id="be84-dded-d9d1-868f" name="Clairvoyant (Unique/Psychic)" entryId="a440-5aaf-213b-d5bb::7493-1c3c-a72c-bc5f" number="1" type="upgrade">
+          <profiles>
+            <profile id="a440-5aaf-213b-d5bb::9dea-4bd3-ef05-3e29" name="Clairvoyant (Unique/Psychic)" hidden="false" typeId="27c9-8948-56dc-b664" typeName="Characteristic">
+              <characteristics>
+                <characteristic name="Movement" typeId="df79-088a-9662-4941">7*</characteristic>
+                <characteristic name="Initiative" typeId="546c-2d7b-94fa-714b">6*</characteristic>
+                <characteristic name="Health" typeId="0860-036f-b5e3-0b5c">10</characteristic>
+                <characteristic name="Armor" typeId="fdb9-7fc6-151b-96f4">2</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="a440-5aaf-213b-d5bb::0e64-50b1-cb74-752a::6691-f6bb-5d85-40b0" name="Psychic ABility 3" hidden="false" typeId="f7f1-057c-64de-8b10" typeName="Psychic Ability">
+              <characteristics>
+                <characteristic name="School Order" typeId="1205-2b68-f272-49f6">Any Plasmid ability at the cost of 1uc per ability</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selections>
+            <selection id="b64c-42be-f2cd-629c" name="Subcompact Bolt Gun" entryId="a440-5aaf-213b-d5bb::010c-43f4-0eb0-cde0::4dd8-a7bc-a6d0-3fb9::9394-0ff4-f0af-d53e" entryGroupId="a440-5aaf-213b-d5bb::010c-43f4-0eb0-cde0::3941-9b09-6805-cf57" number="1" type="upgrade">
+              <profiles>
+                <profile id="a440-5aaf-213b-d5bb::010c-43f4-0eb0-cde0::4dd8-a7bc-a6d0-3fb9::c6a9-c370-30f7-3fbb" name="Subcompact Bolt Gun" hidden="false" typeId="d89f-2134-4e54-a502" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="549e-ea38-4e69-a0d9">18</characteristic>
+                    <characteristic name="Attack Roll Per Target" typeId="453a-bb38-6f29-78f1">2</characteristic>
+                    <characteristic name="Damage Bonus" typeId="eb54-e43c-e3f5-d2ef">+2</characteristic>
+                    <characteristic name="Special Rules" typeId="1d54-d789-0fcb-405d">+1 initiative in CC; Unwieldy; Compact</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="UC" typeId="9e37-50a0-9764-fda5" value="0.0"/>
+              </costs>
+            </selection>
+            <selection id="d4da-b8dd-9e18-be4d" name="Bolt Rifle" entryId="a440-5aaf-213b-d5bb::76cc-161c-b702-d890::13dd-814b-2db6-5e87::778b-dbe0-82ff-91e3" entryGroupId="a440-5aaf-213b-d5bb::76cc-161c-b702-d890::7778-e9f0-f902-45ef" number="1" type="upgrade">
+              <profiles>
+                <profile id="a440-5aaf-213b-d5bb::76cc-161c-b702-d890::13dd-814b-2db6-5e87::1944-c00a-752e-a54f" name="Bolt Rifle" hidden="false" typeId="d89f-2134-4e54-a502" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="549e-ea38-4e69-a0d9">24</characteristic>
+                    <characteristic name="Attack Roll Per Target" typeId="453a-bb38-6f29-78f1">1</characteristic>
+                    <characteristic name="Damage Bonus" typeId="eb54-e43c-e3f5-d2ef">+3</characteristic>
+                    <characteristic name="Special Rules" typeId="1d54-d789-0fcb-405d">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="UC" typeId="9e37-50a0-9764-fda5" value="0.0"/>
+              </costs>
+            </selection>
+            <selection id="9193-22e6-f9ac-ad67" name="4. Enrage Power lvl-12" entryId="a440-5aaf-213b-d5bb::88a5-ccb4-e263-4cd5::5e1f-5570-81f3-4136::1e87-3eb2-a0b4-d959" entryGroupId="a440-5aaf-213b-d5bb::88a5-ccb4-e263-4cd5::b8ff-83af-da6c-51fa" number="1" type="upgrade">
+              <costs>
+                <cost name="UC" typeId="9e37-50a0-9764-fda5" value="1.0"/>
+              </costs>
+            </selection>
+            <selection id="649d-c07c-1db5-71f7" name="6. Collide Power lvl-14" entryId="a440-5aaf-213b-d5bb::88a5-ccb4-e263-4cd5::4402-32a0-7556-02c9::3335-bc5f-0d19-281e" entryGroupId="a440-5aaf-213b-d5bb::88a5-ccb4-e263-4cd5::b8ff-83af-da6c-51fa" number="1" type="upgrade">
+              <costs>
+                <cost name="UC" typeId="9e37-50a0-9764-fda5" value="1.0"/>
+              </costs>
+            </selection>
+          </selections>
+          <costs>
+            <cost name="UC" typeId="9e37-50a0-9764-fda5" value="14.0"/>
+          </costs>
+          <categories>
+            <category id="5995-4e65-c712-d4eb" name="Specialist" entryId="ff4a-8fe9-f722-104d" primary="true"/>
+            <category id="7551-3a63-c75f-9fe8" name="Psychic" entryId="65e2-baf1-a3e7-df11" primary="false"/>
+          </categories>
+        </selection>
+        <selection id="b788-1dab-3b69-cade" name="Seamstress (Unique/Psychic)" entryId="65ed-af77-f605-358e::75ce-8f40-2ba4-43b8" number="1" type="upgrade">
+          <profiles>
+            <profile id="65ed-af77-f605-358e::96dc-d3e5-e1fe-d409" name="Seamstress (Unique/Psychic)" hidden="false" typeId="27c9-8948-56dc-b664" typeName="Characteristic">
+              <characteristics>
+                <characteristic name="Movement" typeId="df79-088a-9662-4941">7*</characteristic>
+                <characteristic name="Initiative" typeId="546c-2d7b-94fa-714b">5*</characteristic>
+                <characteristic name="Health" typeId="0860-036f-b5e3-0b5c">8</characteristic>
+                <characteristic name="Armor" typeId="fdb9-7fc6-151b-96f4">2</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="65ed-af77-f605-358e::6444-9bac-8110-0086::2667-e97b-ea4f-d976" name="Psychic Ability 2" hidden="false" typeId="f7f1-057c-64de-8b10" typeName="Psychic Ability">
+              <characteristics>
+                <characteristic name="School Order" typeId="1205-2b68-f272-49f6">Abilities 1 and 2 of School of Order</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selections>
+            <selection id="a887-635d-e49b-b02a" name="Bolt Rifle (Scoped)" entryId="65ed-af77-f605-358e::a062-0c34-8011-8be8::2c6e-225c-b5dc-1a5c" entryGroupId="65ed-af77-f605-358e::1c5a-650e-91b3-a6cd" number="1" type="upgrade">
+              <profiles>
+                <profile id="65ed-af77-f605-358e::a062-0c34-8011-8be8::5bdb-2a63-60c9-29b9" name="Bolt Rifle (Scoped)" hidden="false" typeId="d89f-2134-4e54-a502" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="549e-ea38-4e69-a0d9">36</characteristic>
+                    <characteristic name="Attack Roll Per Target" typeId="453a-bb38-6f29-78f1">1</characteristic>
+                    <characteristic name="Damage Bonus" typeId="eb54-e43c-e3f5-d2ef">+3</characteristic>
+                    <characteristic name="Special Rules" typeId="1d54-d789-0fcb-405d">If used to execute an Advance Order, read all stats like a normal Bolt Rifle and apply -1 initiative modifier to attack roll as normal</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="UC" typeId="9e37-50a0-9764-fda5" value="0.0"/>
+              </costs>
+            </selection>
+          </selections>
+          <costs>
+            <cost name="UC" typeId="9e37-50a0-9764-fda5" value="12.0"/>
+          </costs>
+          <categories>
+            <category id="fc26-c667-5019-9191" name="Specialist" entryId="ff4a-8fe9-f722-104d" primary="true"/>
+            <category id="ddb6-7526-feef-763e" name="Psychic" entryId="65e2-baf1-a3e7-df11" primary="false"/>
+          </categories>
+        </selection>
+        <selection id="72df-bf74-1212-ca6c" name="Henchman" entryId="0457-ec05-0160-531f::bc89-3515-05d2-71be" number="1" type="upgrade">
+          <profiles>
+            <profile id="0457-ec05-0160-531f::e583-e835-81d2-1341" name="Henchman" hidden="false" typeId="27c9-8948-56dc-b664" typeName="Characteristic">
+              <characteristics>
+                <characteristic name="Movement" typeId="df79-088a-9662-4941">6*</characteristic>
+                <characteristic name="Initiative" typeId="546c-2d7b-94fa-714b">3*</characteristic>
+                <characteristic name="Health" typeId="0860-036f-b5e3-0b5c">8</characteristic>
+                <characteristic name="Armor" typeId="fdb9-7fc6-151b-96f4">2</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selections>
+            <selection id="ea6a-fded-ac52-4012" name="Bolt Magnum" entryId="0457-ec05-0160-531f::2210-c899-6b4f-c249::31ca-160e-1ba5-56e7" entryGroupId="0457-ec05-0160-531f::0b89-daf3-ee4f-5ab1" number="1" type="upgrade">
+              <profiles>
+                <profile id="0457-ec05-0160-531f::2210-c899-6b4f-c249::0048-b338-c92c-965c" name="Bolt Magnum" hidden="false" typeId="d89f-2134-4e54-a502" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="549e-ea38-4e69-a0d9">12</characteristic>
+                    <characteristic name="Attack Roll Per Target" typeId="453a-bb38-6f29-78f1">1</characteristic>
+                    <characteristic name="Damage Bonus" typeId="eb54-e43c-e3f5-d2ef">+3</characteristic>
+                    <characteristic name="Special Rules" typeId="1d54-d789-0fcb-405d">+1 initiative in CC; Cannot be used to execute Cover Fire</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="UC" typeId="9e37-50a0-9764-fda5" value="0.0"/>
+              </costs>
+            </selection>
+            <selection id="fca5-c301-ecf8-8b20" name="Bolt Rifle" entryId="0457-ec05-0160-531f::8d0f-b3a5-e645-f4bc::778b-dbe0-82ff-91e3" entryGroupId="0457-ec05-0160-531f::c3b9-eff2-9b74-7e7f" number="1" type="upgrade">
+              <profiles>
+                <profile id="0457-ec05-0160-531f::8d0f-b3a5-e645-f4bc::1944-c00a-752e-a54f" name="Bolt Rifle" hidden="false" typeId="d89f-2134-4e54-a502" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="549e-ea38-4e69-a0d9">24</characteristic>
+                    <characteristic name="Attack Roll Per Target" typeId="453a-bb38-6f29-78f1">1</characteristic>
+                    <characteristic name="Damage Bonus" typeId="eb54-e43c-e3f5-d2ef">+3</characteristic>
+                    <characteristic name="Special Rules" typeId="1d54-d789-0fcb-405d">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="UC" typeId="9e37-50a0-9764-fda5" value="0.0"/>
+              </costs>
+            </selection>
+            <selection id="d2cb-eb4e-f52e-9345" name="Stolen Legionary Armor" entryId="0457-ec05-0160-531f::653f-b1d5-b980-7753::3e3f-e657-0582-a6db::b566-2cef-dbc9-a6ad" entryGroupId="0457-ec05-0160-531f::653f-b1d5-b980-7753::2713-357f-77b5-28d6" number="1" type="upgrade">
+              <profiles>
+                <profile id="0457-ec05-0160-531f::653f-b1d5-b980-7753::3e3f-e657-0582-a6db::24ca-1051-26c3-fb2f" name="Stolen Legionary Armor" hidden="false" typeId="7af8-bea8-aaa8-2295" typeName="Relic">
+                  <characteristics>
+                    <characteristic name="Special Rules" typeId="b1d9-301e-599c-d3f6">Grants +1 armor value to the soldier for the entirety of the battle.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="UC" typeId="9e37-50a0-9764-fda5" value="2.0"/>
+              </costs>
+            </selection>
+          </selections>
+          <costs>
+            <cost name="UC" typeId="9e37-50a0-9764-fda5" value="10.0"/>
+          </costs>
+          <categories>
+            <category id="f3bc-54bf-ae10-b0b2" name="Soldier" entryId="3c47-be9a-ee6e-cdc3" primary="true"/>
+          </categories>
+        </selection>
+      </selections>
+      <publications>
+        <publication id="9ed2-b94e-33e0-364e" name="StarBreach PDF V2.3"/>
+      </publications>
+      <categories>
+        <category id="f96d-e09d-3352-fa1e" name="Uncategorised" entryId="(No Category)" primary="false"/>
+        <category id="96a5-2114-4373-8e30" name="Soldier" entryId="3c47-be9a-ee6e-cdc3" primary="false"/>
+        <category id="a816-dc4a-6f26-3fee" name="Alpha" entryId="65fa-de41-86ca-79a3" primary="false"/>
+        <category id="3732-9aa2-2b10-8383" name="Specialist" entryId="ff4a-8fe9-f722-104d" primary="false"/>
+      </categories>
+    </force>
+  </forces>
+</roster>
